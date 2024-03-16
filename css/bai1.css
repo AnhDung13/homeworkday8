@@ -1,0 +1,70 @@
+@font-face {
+  font-family: manrope;
+  src: url(../font/Manrope-Regular.ttf);
+}
+html {
+  font-family: manrope;
+}
+body {
+  background-image: url(https://www.gmevents.ae/wp-content/uploads/2019/04/GMBoardroom.jpg);
+  background-size: cover;
+}
+nav {
+  background-color: #f3f3f3;
+  height: 60px;
+}
+.logo {
+  float: left;
+  line-height: 60px;
+  font-size: 2em;
+  margin-left: 10%;
+  font-weight: bold;
+}
+#nav {
+  float: right;
+  margin-right: 10%;
+  position: relative;
+}
+#nav > li {
+  display: inline-block;
+}
+#nav > li > a {
+  font-size: 16px;
+  line-height: 60px;
+  padding: 0 20px;
+  display: inline-block;
+}
+#nav > :nth-child(7) > a {
+  padding-right: 0;
+}
+.mega-menu {
+  width: 1300px;
+  background: white;
+  position: absolute;
+  right: 10%;
+  border-radius: 10px;
+  display: none;
+}
+.menu-right,
+.menu-left {
+  float: left;
+}
+table {
+  padding: 15px;
+  position: relative;
+}
+table td,
+th {
+  padding: 0px 120px 10px 0px;
+  cursor: pointer;
+}
+#nav > li:hover .mega-menu {
+  display: block;
+}
+.menu-right > table::before {
+  content: "";
+  position: absolute;
+  border-left: 1px solid #ddd;
+  left: -20px;
+  height: 330px;
+}
