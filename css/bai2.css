@@ -1,0 +1,139 @@
+@font-face {
+  font-family: nunito;
+  src: url(../font/Nunito-Regular.ttf);
+}
+html {
+  font-family: nunito;
+}
+body {
+  background-color: #747474;
+}
+aside {
+  float: right;
+}
+.cart {
+  width: 450px;
+  background: #fff;
+  height: 100vh;
+}
+
+.icon {
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  color: white;
+  font-size: 1.2em;
+  line-height: 23px;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 1;
+}
+#mini-cart:checked ~ .cart/*,
+ .icon*/ {
+  display: none;
+}
+.cart .heading {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  background: #b0b0b06b;
+  align-items: center;
+  font-size: 1.5em;
+  position: relative;
+  padding-left: 30px;
+}
+.cart .heading::after {
+  content: "4";
+  position: absolute;
+  background: blue;
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  left: 185px;
+  top: 5px;
+}
+.cart img {
+  width: 100px;
+  background-color: rgba(255, 224, 196, 0.4);
+  margin: 0 15px;
+  float: left;
+}
+.products-list {
+  height: 360px;
+  overflow: auto;
+}
+.product {
+  background-color: #eeeeee;
+  padding: 30px 0;
+  overflow: auto;
+}
+.product::after {
+  content: "x";
+  font-size: 2em;
+  color: #b4b4b4;
+  margin-top: -40px;
+  margin-left: 30px;
+  display: inline-block;
+}
+.info {
+  float: left;
+  padding: 0px 10px 0px 5px;
+}
+.info input {
+  border: 1px solid black;
+  text-indent: calc(50% + 3px);
+  height: 30px;
+  width: 100px;
+  border-radius: 99px;
+  margin-right: 50px;
+}
+
+.info p {
+  padding-bottom: 15px;
+}
+.info span {
+  font-weight: bold;
+}
+.payment {
+  padding: 25px;
+}
+.payment button {
+  display: block;
+}
+.payment span,
+.payment i {
+  font-size: 1.3em;
+  font-weight: bold;
+  display: inline-block;
+}
+.payment i {
+  color: blue;
+  border: 1px solid blue;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  margin-top: 40px;
+}
+.payment p {
+  margin-top: 15px;
+}
+.payment button {
+  width: 100%;
+  height: 50px;
+  margin-top: 15px;
+  background-color: white;
+  border: 2px solid #ddd;
+  border-radius: 7px;
+  font-weight: 500;
+  font-size: 1em;
+  color: #b4b4b4;
+}
